@@ -1,0 +1,212 @@
+@import 'responsive';
+*,
+::before
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 0.875;
+    font-family: 'Lato';
+    cursor: pointer;
+    .banner{
+        // background: url(./pexels-pixabay-161247.jpg);
+        height: 100vh;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .video-banner{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        .bg-video{
+            width: 100%;
+            // height: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+ 
+  
+     .button1,.button0{
+        padding-block: 5px;
+        padding-inline: 10px;
+        border-radius: 20px;
+        
+     }
+     .nav-item{
+        color: aliceblue;
+     }
+     .about{
+       color: white;
+       text-decoration: none;
+       &:hover{
+        text-decoration: underline;
+        transition: all 0.3 ease-in-out;
+        
+       }
+        
+        
+     }
+     .nav-item{
+        color: white;
+        text-decoration: none;
+        &:hover{
+         text-decoration: underline;
+         transition: all 0.3 ease-in-out;
+         
+        }
+         
+         
+      }
+}
+.social-icons{
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    z-index: 99999;
+}
+.card-section{
+    margin-top: 6rem;
+}
+.destination{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+// .card1{
+//     &:hover{
+//         transform: scale(1.2);
+//         transition:  transform .2s ease-in-out;
+//         cursor: pointer;
+//     }
+// }
+.img-fluid{
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .slides {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    // top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    // top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.testimony{
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  
+}
+.lightbox{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  place-items: center;
+  z-index: 9999999;
+  
+  img{
+      width: 50%;
+      // height: 400px;
+      object-fit: cover;
+      
+  }
+}
+.lightbox.show{
+  display: grid;
+  
+}
+.carousel{
+  cursor: pointer;
+}
+.card-body{
+  margin-block: 20px;
+}
